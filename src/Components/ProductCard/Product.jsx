@@ -8,9 +8,11 @@ const Product = () => {
       {products.map((item, index) => (
         <div key={index} className="card">
           <div className="card-over">
-            <p>{item.title}</p>
+            <p className="title">{item.title}</p>
           </div>
-          <h1>{item.price} $</h1>
+          <div className="price">
+            <h1>{item.price} $</h1>
+          </div>
           <img src={item.image} alt="img" />
         </div>
       ))}
